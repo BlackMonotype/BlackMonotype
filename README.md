@@ -1,7 +1,7 @@
 <div align="center">
 
-  <!-- Logo Asset: Make sure your uploaded file matches this path/filename -->
-  <img src="black_monotype_logo.jpeg" alt="Black Monotype Logo" width="480" style="max-width: 100%; height: auto;" />
+  <!-- Logo Asset: Make sure your uploaded file matches this filename -->
+  <img src="logo.png" alt="Black Monotype Logo" width="480" style="max-width: 100%; height: auto;" />
 
   <br />
 
@@ -63,13 +63,12 @@ Specializing in native browser technologies—**HTML5, modern CSS, and vanilla J
 
 ### 🔬 Technical Principles
 
-```javascript
-const BlackMonotype = {
-  stack: ["Semantic HTML5", "Advanced Modern CSS", "Vanilla JavaScript"],
-  aesthetic: ["Dark Industrial", "Tactile Analog", "Psychological Horror UI"],
-  ethos: [
-    "No bloated frameworks when raw DOM and CSS can carry the dread.",
-    "Form follows atmosphere; every interaction must convey weight.",
+* **Core Stack:** Semantic HTML5 • Advanced Modern CSS • Vanilla JavaScript
+* **Aesthetic Focus:** Dark Industrial • Tactile Analog • Psychological Horror UI
+* **Core Tenets:**
+  * No bloated frameworks when raw DOM and CSS can carry the dread.
+  * Form follows atmosphere; every interaction must convey weight.
+  * Tactile digital decay over flat, sterile trends.
 
 ---
 
@@ -84,6 +83,3 @@ const BlackMonotype = {
 <div align="center">
   <sub>Designed & engineered under the Black Monotype imprint. Form follows dread.</sub>
 </div>
-    "Tactile digital decay over flat, sterile trends."
-  ]
-};
