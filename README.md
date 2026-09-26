@@ -1,7 +1,7 @@
 <div align="center">
 
   <!-- Logo Asset: Make sure your uploaded file matches this filename -->
-  <img src="logo.png" alt="Black Monotype Logo" width="480" style="max-width: 100%; height: auto;" />
+  <img src="black_monotype_logo.jpeg" alt="Black Monotype Logo" width="480" style="max-width: 100%; height: auto;" />
 
   <br />
 
