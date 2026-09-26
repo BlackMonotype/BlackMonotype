@@ -1,0 +1,118 @@
+/* 
+  📡 BLACK MONOTYPE • CORE DESIGN TOKENS
+  Atmospheric Weight • Visceral Tension • Tactile Dread
+*/
+
+:root {
+  /* --- PALETTE MATRIX --- */
+  --void-absolute: #050505; /* Pure ink abyss for backgrounds */
+  --void-surface: #0f1012; /* Low-light UI surface plates */
+  --void-elevated: #16181c; /* Containers catching minimal light */
+
+  --monochrome-bright: #f4f6f9; /* Stark, cold text illumination */
+  --monochrome-muted: #7d8590; /* Ghostly typography state */
+
+  /* --- ACCENT EMISSIONS --- */
+  --arterial-red: #c92a2a; /* Warning flags, critical errors, stress */
+  --toxic-green: #2b8a3e; /* Phosphor emissions, terminal feedback */
+  --ghost-white: #e9ecef; /* Unstable utility indicators */
+
+  /* --- BORDERS & MISC --- */
+  --brutal-border: 1px solid #2d3139;
+  --brutal-border-heavy: 2px solid var(--monochrome-muted);
+
+  /* --- EFFECTS & SCANLINES --- */
+  --crt-glow: 0 0 8px rgba(244, 246, 249, 0.15);
+  --phosphor-glow: 0 0 12px rgba(43, 138, 62, 0.6);
+}
+
+/* --- PROCEDURAL ATMOSPHERIC UTILITIES --- */
+
+/* High-contrast dark room baseline text formatting */
+body {
+  background-color: var(--void-absolute);
+  color: var(--monochrome-bright);
+  font-family: "Courier New", Courier, monospace;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* CRT Screen Flickering Emulation */
+@keyframes crt-flicker {
+  0% {
+    opacity: 0.985;
+    transform: scaleY(1);
+  }
+  50% {
+    opacity: 0.96;
+    transform: scaleY(1.002);
+  }
+  100% {
+    opacity: 0.99;
+    transform: scaleY(1);
+  }
+}
+
+/* Horizontal Scanline Scrolling Effect */
+@keyframes scanline-scroll {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+/* Structural Decay - Subtle Breathing UI Element State */
+@keyframes structure-decay {
+  0% {
+    opacity: 0.4;
+    filter: blur(0.5px);
+  }
+  50% {
+    opacity: 0.25;
+    filter: blur(1px);
+  }
+  100% {
+    opacity: 0.4;
+    filter: blur(0.5px);
+  }
+}
+
+/* Apply this overlay to achieve physical CRT screen mesh properties */
+.ambient-crt-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background:
+    linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%),
+    linear-gradient(
+      90deg,
+      rgba(255, 0, 0, 0.06),
+      rgba(0, 255, 0, 0.02),
+      rgba(0, 0, 255, 0.06)
+    );
+  background-size:
+    100% 4px,
+    6px 100%;
+  z-index: 9999;
+  pointer-events: none;
+  animation: crt-flicker 0.15s infinite;
+}
+
+.ambient-crt-layer::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.3) 50%);
+  background-size: 100% 3px;
+  animation: scanline-scroll 8s linear infinite;
+  opacity: 0.7;
+}

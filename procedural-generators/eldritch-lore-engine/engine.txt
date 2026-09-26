@@ -1,0 +1,46 @@
+# 📡 BLACK MONOTYPE • ELDRITCH LORE ENGINE
+# Procedural Array Matrix for Psychological Horror Atmosphere
+
+# Main Output Structure
+output
+  The screen flickers. [incident] [manifestation]. Current structural state: [decay_percentage]%.
+  An absolute silence falls. [atmospheric_shift] [entity_presence].
+  System log update: [diagnostic_log]. [incident].
+
+# Core Horror Narrative Variables
+incident
+  A low mechanical hum echoes through the conduit
+  The terminal cursor begins to delete itself backwards
+  A rapid sequence of unmapped hex codes scrolls across the screen
+  The ambient scanline mesh shifts to an aggressive arterial red tint
+  The system cooling fans drop down to a freezing stall
+
+manifestation
+  and a wet, rhythmic tapping sounds from behind the chassis panel
+  leaving only an ominous string of monolithic symbols behind
+  as if something is attempting to overwrite the local front-end memory
+  revealing a hidden subgrid layout underneath the interface
+  accompanied by a sharp drop in local workspace temperature
+
+atmospheric_shift
+  The contrast values of the interface aggressively invert
+  The monospace fonts begin to blur and stretch dynamically
+  The shadow layers expand outward to devour the UI containers
+  A digital grain texture overlays every interactive button link
+
+entity_presence
+  as a pale shape resolves inside the glass refraction mirror
+  and the terminal log prints an unauthorized external connection
+  followed by a faint whispering noise emanating from the sound buffer
+  signaling that the deep absolute void has successfully established entry
+
+diagnostic_log
+  CRITICAL CORE CORRUPTION ENCOUNTERED
+  UNAUTHORIZED MEMORY MATRIX READING DETECTED
+  STATE DECAY THRESHOLD EXCEEDED BY 84.3%
+  SIGNAL EXTRACTION ALIVE ON CONSOLE CHANNEL 0
+
+decay_percentage
+  {80-99}
+  {44-79}
+  {01-43}

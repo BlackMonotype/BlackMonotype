@@ -1,0 +1,71 @@
+/* 
+  📡 PERCHANCE GENERATOR INJECTION INTERFACE
+  Oppressive Digital Environments • Platform Styling Override
+*/
+
+/* Reset and force the entire platform container into the absolute void */
+body,
+html {
+  background-color: #050505 !important;
+  color: #f4f6f9 !important;
+  font-family: "Courier New", Courier, monospace !important;
+  margin: 0;
+  padding: 24px;
+}
+
+/* Style the main output container box where your horror text prints out */
+#outputContainer,
+.output-box,
+#output {
+  background-color: #0f1012 !important;
+  border: 1px solid #2d3139 !important;
+  border-left: 3px solid #c92a2a !important; /* Arterial Red left warning border */
+  padding: 16px !important;
+  font-size: 1.1rem !important;
+  line-height: 1.6 !important;
+  color: #f4f6f9 !important;
+  text-shadow: 0 0 4px rgba(244, 246, 249, 0.2) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5) !important;
+  margin-bottom: 20px !important;
+}
+
+/* Style the interactive randomized trigger button */
+button,
+.generate-btn {
+  background-color: #16181c !important;
+  color: #2b8a3e !important; /* Toxic Green interactive font color */
+  border: 1px solid #2b8a3e !important;
+  padding: 10px 20px !important;
+  font-family: "Courier New", Courier, monospace !important;
+  font-weight: bold !important;
+  letter-spacing: 2px !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease-in-out !important;
+}
+
+/* Aggressive hover trigger feedback mimicking console inputs */
+button:hover,
+.generate-btn:hover {
+  background-color: #2b8a3e !important;
+  color: #050505 !important;
+  box-shadow: 0 0 12px rgba(43, 138, 62, 0.6) !important; /* Phosphor Glow effect */
+}
+
+/* Add an active press state transformation down into the slot container */
+button:active,
+.generate-btn:active {
+  transform: scale(0.98);
+  background-color: #1c6b30 !important;
+}
+
+/* Style any utility link arrays or index links running underneath */
+a {
+  color: #7d8590 !important;
+  text-decoration: none !important;
+  font-size: 0.85rem !important;
+}
+
+a:hover {
+  color: #c92a2a !important;
+  text-decoration: underline !important;
+}

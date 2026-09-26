@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Black Monotype • Analog Noise Engine</title>
+    <!-- Connect to your global master design tokens -->
+    <link rel="stylesheet" href="../../atmospheric-styling/design-tokens.css" />
+    <!-- Connect to this specific experiment's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- The physical CRT overlay layer defined in your master tokens -->
+    <div class="ambient-crt-layer"></div>
+
+    <!-- Main Terminal Container Matrix -->
+    <main class="terminal-container">
+      <header class="terminal-header">
+        <div class="status-indicator intact">SYSTEM: OPERATIONAL</div>
+        <div class="branding-stamp">BM//E-001</div>
+      </header>
+
+      <!-- The canvas element where JavaScript will procedurally inject noise distortion -->
+      <div class="viewport-frame">
+        <canvas id="noiseCanvas"></canvas>
+        <div class="static-readout">SIGNAL DECAY ADVISORY</div>
+      </div>
+
+      <footer class="terminal-footer">
+        <p class="console-log">> INITIALIZING PHOSPHOR INTERFACE...</p>
+        <p class="console-log">
+          > LINKING ATMOSPHERIC STYLING MODULES... SUCCESS.
+        </p>
+      </footer>
+    </main>
+
+    <!-- Connect your logic script -->
+    <script src="app.js"></script>
+  </body>
+</html>
