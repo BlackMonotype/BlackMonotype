@@ -116,3 +116,49 @@ body {
   animation: scanline-scroll 8s linear infinite;
   opacity: 0.7;
 }
+/* --- CHROMATIC ABERRATION LENS DISTORTION ELEMENTS --- */
+
+@keyframes chromatic-shift {
+  0% {
+    text-shadow:
+      1px 0 0 rgba(255, 0, 0, 0.5),
+      -1px 0 0 rgba(0, 255, 255, 0.5),
+      0 0 3px var(--monochrome-bright);
+  }
+  40% {
+    text-shadow:
+      1px 0 0 rgba(255, 0, 0, 0.5),
+      -1px 0 0 rgba(0, 255, 255, 0.5),
+      0 0 3px var(--monochrome-bright);
+  }
+  45% {
+    text-shadow:
+      3px 0.5px 0 rgba(255, 0, 0, 0.7),
+      -2px -1px 0 rgba(0, 255, 255, 0.7),
+      0 0 5px var(--monochrome-bright);
+  }
+  50% {
+    text-shadow:
+      -1px 1px 0 rgba(255, 0, 0, 0.6),
+      2px 0 0 rgba(0, 255, 255, 0.6),
+      0 0 2px var(--monochrome-bright);
+  }
+  55% {
+    text-shadow:
+      1px 0 0 rgba(255, 0, 0, 0.5),
+      -1px 0 0 rgba(0, 255, 255, 0.5),
+      0 0 3px var(--monochrome-bright);
+  }
+  100% {
+    text-shadow:
+      1px 0 0 rgba(255, 0, 0, 0.5),
+      -1px 0 0 rgba(0, 255, 255, 0.5),
+      0 0 3px var(--monochrome-bright);
+  }
+}
+
+/* Apply this class to headers or warning indicators for an unstable lens effect */
+.lens-aberration {
+  animation: chromatic-shift 3s infinite;
+  position: relative;
+}

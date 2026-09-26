@@ -1,0 +1,30 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 24px;
+}
+.decay-frame {
+  width: 100%;
+  max-width: 650px;
+  border-left: 2px solid var(--monochrome-muted);
+  padding-left: 24px;
+}
+.blog-header {
+  margin-bottom: 32px;
+}
+.entropy-index {
+  font-size: 0.8rem;
+  color: var(--arterial-red);
+  letter-spacing: 1px;
+}
+.post-meta {
+  font-size: 0.75rem;
+  color: var(--monochrome-muted);
+}
+.post-body {
+  line-height: 1.7;
+  color: var(--ghost-white);
+  animation: structure-decay 4s infinite ease-in-out;
+}

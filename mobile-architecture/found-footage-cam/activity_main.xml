@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 📡 NATIVE MOBILE FRAMEWORK • CAMCORDER HARDWARE EMULATION -->
+<RelativeLayout xmlns:android="http://android.com"
+    android:layout_width="match_match"
+    android:layout_height="match_parent"
+    android:background="#050505"
+    android:padding="16dp">
+
+    <!-- Top Status Control Panel Header Block -->
+    <LinearLayout
+        android:id="@+id/panelHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="REC ●"
+            android:textColor="#c92a2a"
+            android:fontFamily="monospace"
+            android:textStyle="bold"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="STBY // 00:00:00:00"
+            android:textColor="#2b8a3e"
+            android:fontFamily="monospace"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Center Viewport Frame Reticle Grid -->
+    <View
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent"
+        android:backgroundTint="#7d8590" />
+
+    <!-- Bottom Data Metadata Readout Block -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ISO 800\nF2.8\nCH_01"
+            android:textColor="#f4f6f9"
+            android:fontFamily="monospace"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⚠️ SIGNAL_LOSS\nAUTO_GAIN"
+            android:textColor="#c92a2a"
+            android:fontFamily="monospace"
+            android:gravity="end"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</RelativeLayout>
