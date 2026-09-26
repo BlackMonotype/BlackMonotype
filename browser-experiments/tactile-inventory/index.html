@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Black Monotype • Tactile Inventory Matrix</title>
+    <!-- Connect to global master design tokens -->
+    <link rel="stylesheet" href="../../atmospheric-styling/design-tokens.css" />
+    <!-- Connect to local layout styling sheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Ambient CRT scanning overlay mesh -->
+    <div class="ambient-crt-layer"></div>
+
+    <div class="inventory-workspace">
+      <header class="inventory-banner">
+        <h1 class="matrix-title">LOADOUT_MANIFEST_V.4</h1>
+        <div class="weight-status">
+          MASS LOAD: <span class="stress-text">78 / 100 KG</span>
+        </div>
+      </header>
+
+      <!-- Master Monolithic Grid System Container -->
+      <main class="grid-matrix">
+        <!-- Grid Core Cells -->
+        <div class="grid-cell item-active" data-slots="4">
+          <div class="item-meta">01 // ARTERIAL_PRIMARY</div>
+          <div class="item-graphic asset-weapon"></div>
+          <div class="slot-footprint">SIZE: 2x2</div>
+        </div>
+
+        <div class="grid-cell cell-empty"></div>
+        <div class="grid-cell cell-empty"></div>
+
+        <div class="grid-cell item-active" data-slots="2">
+          <div class="item-meta">02 // MEDICAL_INJECTOR</div>
+          <div class="item-graphic asset-med"></div>
+          <div class="slot-footprint">SIZE: 1x2</div>
+        </div>
+
+        <div class="grid-cell cell-empty"></div>
+        <div class="grid-cell cell-empty"></div>
+        <div class="grid-cell cell-empty"></div>
+        <div class="grid-cell cell-empty"></div>
+        <div class="grid-cell cell-empty"></div>
+        <div class="grid-cell cell-empty"></div>
+        <div class="grid-cell cell-empty"></div>
+        <div class="grid-cell cell-empty"></div>
+      </main>
+
+      <footer class="matrix-status">
+        <span class="pulse-indicator">●</span> LINKED MONITOR CHASSIS ACTIVE //
+        SUBGRID SYSTEM LOCKED
+      </footer>
+    </div>
+  </body>
+</html>

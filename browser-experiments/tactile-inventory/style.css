@@ -1,0 +1,126 @@
+/* 
+  📡 TACTILE INVENTORY GRID • LOCAL EXPERIMENTAL STYLESHEET
+  Advanced CSS Grid System Framework • Immersive Spatial Looting
+*/
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+/* Master Centered Panel Framework */
+.inventory-workspace {
+  width: 100%;
+  max-width: 900px;
+  background-color: var(--void-surface);
+  border: var(--brutal-border-heavy);
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.inventory-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: var(--brutal-border);
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+}
+
+.matrix-title {
+  font-size: 1.4rem;
+  margin: 0;
+  letter-spacing: 3px;
+  font-weight: 900;
+  color: var(--monochrome-bright);
+}
+
+.weight-status {
+  font-size: 0.9rem;
+  color: var(--monochrome-muted);
+}
+
+.stress-text {
+  color: var(--arterial-red);
+  font-weight: bold;
+}
+
+/* The Core Tactile Grid Matrix Layout */
+.grid-matrix {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 140px;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+/* Base Configuration for Individual Cells */
+.grid-cell {
+  background-color: var(--void-absolute);
+  border: var(--brutal-border);
+  position: relative;
+  padding: 12px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: background-color 0.15s ease;
+}
+
+.cell-empty:hover {
+  background-color: var(--void-elevated);
+  border-color: var(--monochrome-muted);
+}
+
+/* Active Item Spans & Micro-data States */
+.item-active {
+  border: 1px solid var(--arterial-red);
+  box-shadow: inset 0 0 10px rgba(201, 42, 42, 0.15);
+}
+
+/* Span the Primary Weapon item block into a 2x2 container block space */
+.grid-cell[data-slots="4"] {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+/* Span the Medical kit block vertically across 1x2 cell nodes */
+.grid-cell[data-slots="2"] {
+  grid-row: span 2;
+  border-color: var(--toxic-green);
+  box-shadow: inset 0 0 10px rgba(43, 138, 62, 0.15);
+}
+
+.item-meta {
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  color: var(--monochrome-muted);
+}
+
+.grid-cell[data-slots="2"] .item-meta {
+  color: var(--toxic-green);
+}
+
+.slot-footprint {
+  font-size: 0.7rem;
+  text-align: right;
+  color: var(--monochrome-muted);
+}
+
+/* Visual Environment Footer Layout */
+.matrix-status {
+  font-size: 0.8rem;
+  color: var(--monochrome-muted);
+  letter-spacing: 1px;
+}
+
+.pulse-indicator {
+  color: var(--toxic-green);
+  animation: structure-decay 2s infinite ease-in-out;
+  display: inline-block;
+  margin-right: 6px;
+}
